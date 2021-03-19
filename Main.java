@@ -1,5 +1,5 @@
 public class Main {
-    private static Sort[] sorts = {new BubbleSort()};
+    private static Sort[] sorts = {new BubbleSort(), new SelectionSort(10)};
     public static void main(String[] args) {
         final int WIDTH = 1300;
         final int HEIGHT = 700;
@@ -16,7 +16,7 @@ public class Main {
             Drawing d = new Drawing(100);
             d.paintArray();
             s.sortArray(d);
-            d.paintArray(100);
+            d.paintArray(500);
         }
     }
 }
