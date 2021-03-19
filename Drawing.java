@@ -14,7 +14,7 @@ import java.awt.Color;
         numBars = num;
         barWidth = WIDTH / numBars;
         for(int i = 0; i < num; i++) {
-            arr[i] = (int)(Math.random()*600)+5;
+            arr[i] = (int)(Math.random()*(HEIGHT-50))+5;
             colors[i] = Color.DARK_GRAY;
         }
     }
