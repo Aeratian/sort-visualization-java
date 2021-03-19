@@ -1,5 +1,6 @@
 public class Main {
-    private static Sort[] sorts = { new BubbleSort(), new SelectionSort(10), new InsertionSort(10) };
+    private static Sort[] sorts = { new BubbleSort(), new SelectionSort(), new InsertionSort(), 
+        new MergeSort(10)};
 
     public static void main(String[] args) {
         final int WIDTH = 1300;
