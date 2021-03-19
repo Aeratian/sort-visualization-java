@@ -1,5 +1,6 @@
 public class Main {
-    private static Sort[] sorts = {new BubbleSort(), new SelectionSort(10), new InsertionSort(10)};
+    private static Sort[] sorts = { new BubbleSort(), new SelectionSort(10), new InsertionSort(10) };
+
     public static void main(String[] args) {
         final int WIDTH = 1300;
         final int HEIGHT = 700;
@@ -12,7 +13,7 @@ public class Main {
     }
 
     public static void solve() {
-        for(Sort s: sorts) {
+        for (Sort s : sorts) {
             Drawing d = new Drawing(100);
             d.paintArray();
             s.sortArray(d);
