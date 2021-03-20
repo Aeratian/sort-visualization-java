@@ -17,6 +17,10 @@ public class QuickSort implements Sort {
         time = _time;
     }
 
+    public String getType() {
+        return "Quick Sort";
+    }
+
     public void quickSort(Drawing d, int beg, int end) {
         if (beg < end) {
             int par = partition(d, beg, end);

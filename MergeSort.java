@@ -16,6 +16,10 @@ public class MergeSort implements Sort {
     public void setTime(int _time) {
         time = _time;
     }
+    
+    public String getType() {
+        return "Merge Sort";
+    }
 
     public int mergeSort(Drawing d, int beg, int end) {
         if (end - beg < 2) {

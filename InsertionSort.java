@@ -15,6 +15,10 @@ public class InsertionSort implements Sort {
         time = _time;
     }
 
+    public String getType() {
+        return "Insertion Sort";
+    }
+
     public void sortArray(Drawing d) {
         for (int i = 1; i < d.getNumBars(); i++) {
             int pos = i;

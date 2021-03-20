@@ -13,6 +13,10 @@ public class HeapSort implements Sort {
         time = _time;
     }
 
+    public String getType() {
+        return "Heap Sort";
+    }
+
     public void sortArray(Drawing d) {
         for (int i = d.getNumBars() / 2 - 1; i >= 0; i--) {
             heapify(d, d.getNumBars(), i);

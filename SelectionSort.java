@@ -14,6 +14,10 @@ public class SelectionSort implements Sort {
         time = _time;
     }
 
+    public String getType() {
+        return "Selection Sort";
+    }
+
     public void sortArray(Drawing d) {
         int max, temp;
         for (int i = d.getNumBars(); i > 0; i--) {
