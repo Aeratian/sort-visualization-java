@@ -28,8 +28,10 @@ public class Main {
         int counter = 0;
         while (true) {
             if (StdDraw.isKeyPressed(counter + '0')) {
-                if (counter == 0)
+                if (counter == 0) {
+                    exitMessage();
                     break;
+                }
                 curSort = allSorts[counter - 1];
                 solve();
             }
@@ -49,8 +51,10 @@ public class Main {
         int counter = 0;
         while (true) {
             if (StdDraw.isKeyPressed(counter + '0')) {
-                if (counter == 0)
+                if (counter == 0) {
+                    exitMessage();
                     break;
+                }
                 curSort = allSorts[counter - 1];
                 solve();
             }
@@ -65,5 +69,13 @@ public class Main {
         curSort.sortArray(d);
         d.paintArray(500);
         chooseSort();
+    }
+
+    public static void exitMessage() {
+        StdDraw.clear(StdDraw.WHITE);
+        StdDraw.setPenColor(Color.DARK_GRAY);
+        StdDraw.text(650, 375, "Made by Ian Youn (Aeratian)");
+        StdDraw.text(650, 325, "Thanks for using the program!");
+        StdDraw.show();
     }
 }
