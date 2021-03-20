@@ -12,6 +12,10 @@ public class QuickSort implements Sort {
     public void sortArray(Drawing d) {
         quickSort(d, 0, d.getNumBars() - 1);
     }
+    
+    public void setTime(int _time) {
+        time = _time;
+    }
 
     public void quickSort(Drawing d, int beg, int end) {
         if (beg < end) {

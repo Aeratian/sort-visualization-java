@@ -13,6 +13,10 @@ public class MergeSort implements Sort {
         mergeSort(d, 0, d.getNumBars() - 1);
     }
 
+    public void setTime(int _time) {
+        time = _time;
+    }
+
     public int mergeSort(Drawing d, int beg, int end) {
         if (end - beg < 2) {
             if (end > beg && d.get(end) < d.get(beg)) {

@@ -9,6 +9,10 @@ public class BubbleSort implements Sort {
         time = _time;
     }
 
+    public void setTime(int _time) {
+        time = _time;
+    }
+
     public void sortArray(Drawing d) {
         for (int i = 0; i < d.getNumBars(); i++) {
             for (int j = 1; j < d.getNumBars() - i; j++) {

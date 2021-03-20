@@ -9,6 +9,10 @@ public class HeapSort implements Sort {
         time = _time;
     }
 
+    public void setTime(int _time) {
+        time = _time;
+    }
+
     public void sortArray(Drawing d) {
         for (int i = d.getNumBars() / 2 - 1; i >= 0; i--) {
             heapify(d, d.getNumBars(), i);
